@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Solve";
+}
+
+
+<div class="row mt-5">
+    <div class="col">
+        <form action="Solve" method="post">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Give me two numbers</span>
+                </div>
+                <input type="text"
+                       aria-label="num1"
+                       class="form-control"
+                       name="fizzNum1" />
+                <input type="text"
+                       aria-label="num1"
+                       class="form-control"
+                       name="fizzNum2" />
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary"
+                            type="submit">
+                        FizzBuzz!
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title text-muted">
+                    From 1 to 100, the following numbers Fizz, Buzz, and FizzBuzz
+                </h3>
+                <p class="card-text">@ViewData["FizzBuzz"]</p>
+            </div>
+        </div>
+    </div>
+</div>
