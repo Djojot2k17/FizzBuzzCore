@@ -43,7 +43,7 @@ namespace FizzBuzzCore.Controllers
             int num2 = Int32.Parse(fizzNum2);
             // Start fizzbuzz
             ViewData["FizzBuzz"] = "";
-            for(var i = 1; i < 100; i++)
+            for(var i = 1; i <= 100; i++)
             {
                 if (i % num1 == 0 && i % num2 == 0)
                 {
